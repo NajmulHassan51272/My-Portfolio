@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-dark-bg text-gray-100 font-sans;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-dark-card/60 backdrop-blur-md border border-dark-border;
+  }
+}
